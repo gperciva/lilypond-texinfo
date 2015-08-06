@@ -5,7 +5,9 @@ SHELL = /bin/sh
 
 MAKEINFO = makeinfo
 OUTPUTDIR = out
-MAKEINFOFLAGS = --html -o $(OUTPUTDIR) --css-include=lilypond-manuals.css
+MAKEINFOFLAGS = --html -o $(OUTPUTDIR) \
+	--css-include=lilypond-manuals.css \
+	--init-file=lilypond-custom-html.init
 
 all:
 	$(MAKEINFO) $(MAKEINFOFLAGS) contributor.texi
