@@ -1,0 +1,13 @@
+
+@macro advanced{TEXT}
+@html
+<div class="advanced">
+@end html
+@strong{Advanced note:} \TEXT\
+@c keep the space for proper nesting of </p>
+
+@html
+</div>
+@end html
+@end macro
+
